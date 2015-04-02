@@ -22,7 +22,7 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div class="header" ng-controller="HeaderCtrl" ng-cloak>
+      <div class="header" ng-controller="jonnysAuthModule.HeaderCtrl" ng-cloak>
         <span>
         <ul class="nav nav-pills pull-right" >
           
@@ -90,19 +90,18 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+     <script src="bower_components/angular-jonnys-auth/app.js"></script>
+     <script src="bower_components/angular-jonnys-auth/controllers/user.js"></script>
+      <script src="bower_components/angular-jonnys-auth/controllers/profile.js"></script>
+      <script src="bower_components/angular-jonnys-auth/controllers/facebook.js"></script>
+      <script src="bower_components/angular-jonnys-auth/controllers/header.js"></script>
+      <script src="bower_components/angular-jonnys-auth/services/user.js"></script>
+      <script src="bower_components/angular-jonnys-auth/services/authinterceptor.js"></script>
+     
+
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/filters/percentage.js"></script>
-        <script src="scripts/controllers/login.js"></script>
-        <script src="scripts/controllers/signup.js"></script>
-        <script src="scripts/controllers/user.js"></script>
-        <script src="scripts/controllers/profile.js"></script>
-        <script src="scripts/controllers/facebook.js"></script>
-        <script src="scripts/controllers/header.js"></script>
-        <script src="scripts/services/user.js"></script>
-        <script src="scripts/services/authinterceptor.js"></script>
+       
         <!-- endbuild -->
 </body>
 </html>

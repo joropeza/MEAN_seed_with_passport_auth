@@ -1,6 +1,6 @@
 {
-  "name": "client",
-  "version": "0.0.0",
+  "name": "MEAN_seed_with_passport_auth",
+  "version": "0.0.1",
   "dependencies": {
     "angular": "~1.2.0",
     "json3": "~3.3.1",

@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'jonnysAuthModule'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -33,7 +34,7 @@ angular
       })
       .when('/user', {
         templateUrl: 'views/user.html',
-        controller: 'UserCtrl'
+        controller: 'jonnysAuthModule.UserCtrl'
       })
       .when('/profile', {
         templateUrl: 'views/profile.html',
