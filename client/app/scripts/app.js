@@ -38,11 +38,11 @@ angular
       })
       .when('/profile', {
         templateUrl: 'views/profile.html',
-        controller: 'ProfileCtrl'
+        controller: 'jonnysAuthModule.ProfileCtrl'
       })
       .when('/profile/:id', {
         templateUrl: 'views/profile.html',
-        controller: 'ProfileCtrl'
+        controller: 'jonnysAuthModule.ProfileCtrl'
       })
       .when('/auth/facebook/callback', {
         templateUrl: 'views/auth/facebook/index.html',
