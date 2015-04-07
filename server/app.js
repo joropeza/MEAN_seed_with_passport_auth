@@ -5,8 +5,8 @@ var logger = require('morgan');
 var passport = require('passport');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var flash    = require('connect-flash');
-var session      = require('express-session');
+//var flash    = require('connect-flash');
+//var session      = require('express-session');
 var mongoose = require('mongoose');
 
 var configDB = require('./config/database.js');
@@ -23,10 +23,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // required for passport
-app.use(session({ secret: 'topsecretstringthatisspecifictotheappCHANGETHIS' })); // session secret
+//app.use(session({ secret: 'topsecretstringthatisspecifictotheappCHANGETHIS' })); // session secret
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
-app.use(flash()); // use connect-flash for flash messages stored in session
+//app.use(flash()); // use connect-flash for flash messages stored in session
 
 require('./config/passport')(passport);
 
