@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 //var flash    = require('connect-flash');
 //var session      = require('express-session');
 var mongoose = require('mongoose');
+//var bunyan = require('bunyan');
 
 var configDB = require('./config/database.js');
 mongoose.connect(configDB.url); // connect to our database
@@ -21,6 +22,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+app.use(require('express-bunyan-logger')()); //log requests
 
 // required for passport
 //app.use(session({ secret: 'topsecretstringthatisspecifictotheappCHANGETHIS' })); // session secret
